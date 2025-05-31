@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Веб-типографіка та іконки</title>
+
+  <!-- Google Font: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+
+  <!-- Власний шрифт (FontSquirrel): League Spartan -->
+  <style>
+    @font-face {
+      font-family: 'LeagueSpartan';
+      src: url('fonts/LeagueSpartan.woff2') format('woff2'),
+           url('fonts/LeagueSpartan.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'LeagueSpartan', sans-serif;
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    nav {
+      background: #555;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      font-family: 'LeagueSpartan', sans-serif;
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+    }
+
+    .content {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .icon-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .icon-box {
+      text-align: center;
+      padding: 20px;
+      width: 150px;
+    }
+
+    .icon-box i {
+      font-size: 3rem;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .icon-box p {
+      margin: 0;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Моя Веб-сторінка</h1>
+  </header>
+
+  <nav>
+    <a href="#">Головна</a>
+    <a href="#">Про нас</a>
+    <a href="#">Контакти</a>
+  </nav>
+
+  <div class="content">
+    <p>Цей абзац написано шрифтом Roboto, який підключено з Google Fonts. Заголовки та навігація використовують нестандартний шрифт League Spartan, завантажений з FontSquirrel.</p>
+
+    <div class="icon-section">
+      <div class="icon-box">
+        <i class="fas fa-camera"></i>
+        <p>Фотографія</p>
+      </div>
+      <div class="icon-box">
+        <i class="fas fa-music"></i>
+        <p>Музика</p>
+      </div>
+      <div class="icon-box">
+        <i class="fas fa-code"></i>
+        <p>Програмування</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
